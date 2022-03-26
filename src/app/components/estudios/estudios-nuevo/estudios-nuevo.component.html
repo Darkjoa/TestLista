@@ -1,0 +1,23 @@
+<form class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="titulo">Estudios</label>
+        <input 
+        type="titulo" 
+        name="titulo" 
+        id="titulo" 
+        [(ngModel)]="titulo"
+        placeholder="titulo"
+        >
+    </div>
+    <div class="form-control">
+        <label for="text">Estudios</label>
+        <input 
+        type="text" 
+        name="escuela" 
+        id="escuela" 
+        [(ngModel)]="escuela"
+        placeholder="Escuela">
+    </div>
+    <input type="submit" value="guardar estudio" class="btn btn-block">
+
+</form>

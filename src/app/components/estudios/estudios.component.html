@@ -1,0 +1,10 @@
+<app-estudios-nuevo 
+(addEstudio)="addEstudio($event)"></app-estudios-nuevo>
+<app-estudios-item 
+*ngFor="let estudios of estudios"
+[estudios]="estudios"
+(onDeleteEstudio)="delete(estudios)"
+>
+
+    
+</app-estudios-item>
